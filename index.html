@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.6.0/moment-timezone-with-data-1970-2030.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>World Clock - Maria Caamano</title>
   </head>
@@ -15,19 +17,19 @@
         <option value="newyork">New York</option>
         <option value="tokyo">Tokyo</option>
       </select>
-      <div class="city">
+      <div class="city" id="paris">
         <div>
-          <h2>Paris 🥖</h2>
-          <div class="date">January 08th 2026</div>
+          <h2>Paris</h2>
+          <div class="date"></div>
         </div>
-        <div class="time">18h41</div>
+        <div class="time"></div>
       </div>
-      <div class="city">
+      <div class="city" id="los-angeles">
         <div>
-          <h2>Los Angeles 🍔</h2>
-          <div class="date">January 08th 2026</div>
+          <h2>Los Angeles</h2>
+          <div class="date"></div>
         </div>
-        <div class="time">18h41</div>
+        <div class="time"></div>
       </div>
     </div>
 
