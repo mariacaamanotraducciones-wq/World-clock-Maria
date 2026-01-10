@@ -7,6 +7,14 @@ function updateTime() {
     parisDateElement.innerHTML = moment().format("MMMM Do YYYY");
     parisTimeElement.innerHTML = parisTime.format("HH:mm:ss");
   }
+  let athensElement = document.querySelector("#athens");
+  if (athensElement) {
+    let athensDateElement = athensElement.querySelector(".date");
+    let athensTimeElement = athensElement.querySelector(".time");
+    let athensTime = moment().tz("Europe/Athens");
+    athensDateElement.innerHTML = moment().format("MMMM Do YYYY");
+    athensTimeElement.innerHTML = athensTime.format("HH:mm:ss");
+  }
   let losAngelesElement = document.querySelector("#los-angeles");
   if (losAngelesElement) {
     let losAngelesDateElement = losAngelesElement.querySelector(".date");
